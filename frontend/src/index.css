@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Poppins:wght@500&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+.purple-shadow {
+  box-shadow: 0px 4px 8px rgba(200, 26, 200, 0.6);
+}
+hr {
+  color: purple;
+}
+.neon-purple-text {
+    color: rgb(156, 65, 166); /* This sets the initial color of the text, a soft purple */
+    text-shadow: 
+      0 0 5px rgba(194, 124, 202, 0.8),
+      0 0 10px rgba(194, 124, 202, 0.002),
+      /* 0 0 15px rgba(221, 160, 221, 0.3), */
+      0 0 20px rgba(221, 160, 221, 0.002),
+      /* 0 0 25px rgba(221, 160, 221, 0.3), */
+      0 0 30px rgba(255, 0, 255, 0.003),
+      0 0 35px rgba(255, 0, 255, 0.3);
+  }
+  
+  .neon-purple-border svg {
+    filter: drop-shadow(0 0 5px rgba(194, 124, 202, 0.8))
+            drop-shadow(0 0 10px rgba(194, 124, 202, 0.2))
+            /* drop-shadow(0 0 15px rgba(221, 160, 221, 0.5)) */
+            drop-shadow(0 0 20px rgba(221, 160, 221, 0.2))
+            /* drop-shadow(0 0 25px rgba(221, 160, 221, 0.5)) */
+            drop-shadow(0 0 30px rgba(255, 0, 255, 0.1));
+  }
+  
+  
+  .neon-purple-border svg:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s;
+  }
+  
